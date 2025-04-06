@@ -1,0 +1,20 @@
+<h1>Add new book</h1>
+<form [formGroup]="form" (ngSubmit)="submitForm()">
+    <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" class="form-control" id="title" formControlName="title">
+    </div>
+    <div class="mb-3">
+        <label for="genre" class="form-label">Genre</label>
+        <input type="text" class="form-control" id="genre" formControlName="genre">
+    </div>
+    <div class="mb-3">
+        <label for="author" class="form-label">Author</label>
+        <input type="text" class="form-control" id="author" formControlName="author">
+    </div>
+    <div class="mb-3">
+        <label for="publicationYear" class="form-label">Publication year</label>
+        <input type="number" class="form-control" id="publicationYear" formControlName="publicationYear">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

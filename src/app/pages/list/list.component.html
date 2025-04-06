@@ -1,0 +1,24 @@
+<div class="row">
+    @for( book of books; track book.id ) {
+    <div class="col-md-6 col-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="mb-0">{{book.title}}</h4>
+            </div>
+            <div class="card-body">
+                <p class="text-secondary">Genre</p>
+                <p>{{book.genre}}</p>
+                <p class="text-secondary">Authors</p>
+                <ul>
+                    <li>{{book.author ?? 'No Author'}}</li>
+                </ul>
+
+            </div>
+            <div class="card-footer d-flex gap-2">
+                <a class="btn btn-secondary">Update</a>
+                <a class="btn btn-danger">Delete</a>
+            </div>
+        </div>
+    </div>
+    }
+</div>
